@@ -6,7 +6,7 @@
 /*   By: heahn <heahn@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/02 23:02:58 by heahn             #+#    #+#             */
-/*   Updated: 2021/06/29 05:01:40 by heahn            ###   ########.fr       */
+/*   Updated: 2021/07/03 05:28:26 by heahn            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ int		get_line(char *temp, char **line, int i)
 	int		len;
 
 	*line = ft_substr(temp, 0, i);
-	++i;
+	i++;
 	len = ft_strlen(temp + i) + 1;
 	ft_memmove(temp, temp + i, len);
 	return (1);
